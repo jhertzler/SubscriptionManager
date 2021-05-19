@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+.table-list {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 1rem;
+    table {
+        width: 100%;
+        tr {
+            th, td {
+                text-align: left;
+                padding: .25rem .5rem;
+                border: 1px solid black;
+            }
+            th {
+                background-color: goldenrod;
+            }
+            &:nth-child(2n) {
+                background-color: lightgray;
+            }
+            &:nth-child(2n+1) {
+                background-color: darkgray;
+            }
+        }
+    }
+}
